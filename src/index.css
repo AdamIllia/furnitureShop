@@ -169,17 +169,24 @@ header .shop-cart .empty h2{
   }
 
   main .item {
-            width: 30%;
+           width: 30%;
             margin-bottom: 50px;
             background-color: rgb(236, 227, 227);
-           border-radius: 10px 10px 10px 10px;
+           border-radius: 10px;
            position: relative;
   }
 
-  main .item img, 
+  main .item img{
+     width: 100%;
+   height: 250px;
+    border-radius: 10px;
+    transition: transform 500ms ease;
+    cursor: pointer;
+  }
   .full-item img {
-    width: 100%;
-    border-radius: 10px 10px  10px 10px;
+   width: 100%;
+   margin-bottom: 10px;
+    border-radius: 10px;
     transition: transform 500ms ease;
     cursor: pointer;
   }
@@ -190,8 +197,8 @@ header .shop-cart .empty h2{
 
   }
 
-  main h2 .full-item h2, main p .full-item p, main b, .full-item b{
-    margin: 10px 20px; 
+  main h2, .full-item h2, main p, .full-item p, main b, .full-item b{
+    margin:10px; 
     color: #333;
     
   }
@@ -202,13 +209,14 @@ header .shop-cart .empty h2{
 
   main b, .full-item b{
     color: rgb(62, 155, 64);
+    margin-top: 10px;
   }
 
   main .add-to-cart,
   .full-item .add-to-cart{
 position: absolute;
-right: 20px;
-bottom: 20px; 
+right: 5px;
+bottom: 5px; 
 background: rgb(188, 228, 230);
 width: 35px;
 height: 35px;
